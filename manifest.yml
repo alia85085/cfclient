@@ -1,0 +1,11 @@
+applications:
+- name: myfirstclient
+  memory: 756M
+  instances: 1
+  services:
+        - service-registry
+  path: target/cloudfoundryclient-1.0-SNAPSHOT.jar
+  env:
+    SPRING_PROFILES_ACTIVE: dev
+
+#testing

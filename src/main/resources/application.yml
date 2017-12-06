@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: myfirstclient
+  cloud:
+    services:
+      registrationMethod: route
+
+server:
+  port: 8080
+
+myfirstapp:
+  ribbon:
+    ServerListRefreshInterval: 50000
+
+ribbon:
+  IsSecure: false
+
+  profiles: dev
+
+security:
+  basic:
+    enabled: false
